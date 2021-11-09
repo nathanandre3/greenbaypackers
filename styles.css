@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Base STYLES  */
+
+body {
+  font-size: 15px;
+  display: flex;
+  height: 100vh;
+  font-weight: 400;
+  font-family: "Lexend Deca";
+}
+
+h1,
+p,
+button {
+  color: white;
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  font-size: 35px;
+}
+/* Card Styles */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+article {
+  max-width: 268px;
+  position: relative;
+  padding: 42px;
+  height: 520px;
+}
+
+.logo {
+  width: 75px;
+}
+
+h1 {
+  margin: 30px 0 30px;
+}
+
+button {
+  margin-top: 35px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #f6f5f5;
+  height: 40px;
+  width: 140px;
+  position: absolute;
+  cursor: pointer;
+  border-style: solid;
+  border-color: white;
+}
+
+p {
+  line-height: 1.5em;
+}
+/* CARDS */
+
+.offence {
+  background-color: #0b8457;
+  border-radius: 7px 0 0 7px;
+}
+
+.defence {
+  background-color: #ffb70a;
+}
+
+.special-teams {
+  background-color: grey;
+  border-radius: 0 7px 7px 0;
+}
+
+/* BUTTON COLOURS */
+
+.offence-btn {
+  background-color: white;
+  color: #0b8457;
+}
+
+.defence-btn {
+  background-color: white;
+  color: #ffb70a;
+}
+
+.special-teams-btn {
+  background-color: white;
+  color: grey;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 844px) {
+  body {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .offence {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .defence {
+    border-radius: 0 0 0 0;
+  }
+
+  .special-teams {
+    border-radius: 0 0 7px 7px;
+  }
+}
